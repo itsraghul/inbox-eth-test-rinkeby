@@ -23,7 +23,7 @@ beforeEach(async () => {
 
 describe('Inbox', () => {
   it('it deploys a contract', () => {
-    console.log(inbox);
+    assert.ok(inbox.options.address);
   });
 });
 
@@ -38,4 +38,16 @@ describe('Inbox', () => {
 // }
 
 // let car;
-// beforeEach(() =>
+// beforeEach(() => {
+//   car = new Car();
+// });
+
+// describe('Car', () => {
+//   it('it has  a park fn', () => {
+//     assert.equal(car.park(), 'stop');
+//   });
+
+//   it('It can drive the car', () => {
+//     assert.equal(car.drive(), 'go');
+//   });
+// });
